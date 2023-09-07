@@ -1,8 +1,6 @@
 # pgil256.github.io
 
-# Patrick Gilhooley's Portfolio
-
-Visit my portfolio live [here](https://pgil256.github.io/).
+# Visit my portfolio live [here](https://pgil256.github.io/).
 
 ## Overview
 
