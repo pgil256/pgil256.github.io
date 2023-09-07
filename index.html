@@ -29,18 +29,30 @@
     <article id="top" class="wrapper style1">
       <div class="container">
         <div class="row">
-          <div class="col-4 col-5-large col-12-medium">
-            <span class="image fit"><img src="images/pic07.jpg" alt="" /></span>
+          <div class="col-4 col-5-large col-12-medium hover">
+            <span class="image fit"
+              ><img src="images/pic07.jpg" alt="" style="width: 90%"
+            /></span>
           </div>
           <div class="col-8 col-7-large col-12-medium">
             <header>
-              <h1>Hi. I'm <strong>Patrick Gilhooley</strong>.</h1>
+              <h1>Hi. I'm <strong id="strong">Patrick Gilhooley</strong>.</h1>
             </header>
             <p>
-              And this my portfolio. A place to host my work from
-              <a href="https://github.com/pgil256">Github</a> or view posts from
-              my <a href="https://pgil256-blog.github.io/">blog</a>. Don't
-              forget to connect with me on
+              And this is my portfolio. A place to host my work from
+              <a href="https://github.com/pgil256">Github</a>. Check out my
+              <a href="https://pgil256.github.io/blog/">blog</a> or learn about
+              <span class="tooltip"
+                >me<span class="tooltiptext"
+                  >Full stack developer who fell in love with coding two years
+                  ago. After graduating from the University of South Florida
+                  Software Engineering Bootcamp, I've since immersed myself in
+                  new frameworks, open source development, and self-made
+                  projects. Outside of coding, I love my guitar, running, and my
+                  dogs.</span
+                ></span
+              >
+              .Don't forget to connect with me on
               <a href="https://www.linkedin.com/in/patrick-gilhooley-03360b235/"
                 >Linkedin</a
               >!
@@ -61,25 +73,29 @@
           <p>From schema design to end-user testing, I got your back.</p>
         </header>
         <div class="row aln-center">
-          <div class="col-4 col-6-medium col-12-small">
+          <div class="col-4 col-6-medium col-12-small hover-overlay-container">
             <section class="box style1">
               <a
-                href="https://commons.wikimedia.org/wiki/File:Postgresql_elephant.svg#/media/File:Postgresql_elephant.svg"
+                title="Facebook, Public domain, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:React-icon.svg"
               >
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
-                  alt="Postgresql elephant"
+                  alt="React-icon"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
                   width="180"
                   height="180"
                 />
               </a>
-              <h3>Database management</h3>
-              <p>
-                Creating, then monitoring databases throughout their lifecycle.
-              </p>
+              <h3>Client-side development</h3>
+              <p>Enhancing user experience with attractive styling and UI.</p>
             </section>
+            <div class="hover-text-snippet">
+              Experienced with frameworks like React and jQuery, tastefully
+              styling apps using libraries like SASS and Chakra UI.
+            </div>
           </div>
-          <div class="col-4 col-6-medium col-12-small">
+
+          <div class="col-4 col-6-medium col-12-small hover-overlay-container">
             <section class="box style1">
               <a
                 title="node.js authors, Public domain, via Wikimedia Commons"
@@ -98,23 +114,32 @@
                 withstand demand.
               </p>
             </section>
+            <div class="hover-text-snippet">
+              Working with frameworks Node.js and Django, I have designed
+              reliable API endpoints, routing and middleware.
+            </div>
           </div>
-          <div class="col-4 col-6-medium col-12-small">
+          <div class="col-4 col-6-medium col-12-small hover-overlay-container">
             <section class="box style1">
               <a
-                title="Facebook, Public domain, via Wikimedia Commons"
-                href="https://commons.wikimedia.org/wiki/File:React-icon.svg"
+                href="https://commons.wikimedia.org/wiki/File:Postgresql_elephant.svg#/media/File:Postgresql_elephant.svg"
               >
                 <img
-                  alt="React-icon"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+                  alt="Postgresql elephant"
                   width="180"
                   height="180"
                 />
               </a>
-              <h3>Client-side development</h3>
-              <p>Enhancing user experience with attractive styling and UI.</p>
+              <h3>Database management</h3>
+              <p>
+                Creating, then monitoring databases throughout their lifecycle.
+              </p>
             </section>
+            <div class="hover-text-snippet">
+              Using PostgreSQL and SQL Alchemy, I have mapped and monitored
+              relational databases throughout their lifecycle.
+            </div>
           </div>
         </div>
         <footer>
@@ -137,88 +162,46 @@
           </p>
         </header>
         <div class="row">
-          <div
-            class="col-4 col-6-medium col-12-small"
-            style="width: 33.33%; box-sizing: border-box"
-          >
-            <article class="box style2" height="230px">
+          <div class="col-4 col-6-medium col-12-small image-container">
+            <article class="box style2">
               <a
                 href="https://map-my-seat.fly.dev/"
                 class="image featured image-switcher"
               >
-                <img
-                  class="still"
-                  src="images/mms-still.jpg"
-                  alt=""
-                  style="width: 95%; height: auto"
-                />
-                <img
-                  class="animated"
-                  src="images/mms.gif"
-                  alt=""
-                  style="width: 95%; height: auto"
-                />
+                <img class="still" src="images/mms-still.jpg" alt="" />
+                <img class="animated" src="images/mms.gif" alt="" />
               </a>
               <h3><a href="#">Map My Seat</a></h3>
               <p>A seating chart app for teachers.</p>
             </article>
           </div>
-          <div
-            class="col-4 col-6-medium col-12-small"
-            style="width: 33.33%; box-sizing: border-box"
-          >
+          <div class="col-4 col-6-medium col-12-small image-container">
             <article class="box style2">
               <a
                 href="https://jobly-app.fly.dev/"
                 class="image featured image-switcher"
-                height="'auto'"
               >
-                <img
-                  class="still"
-                  src="images/jobly-still.jpg"
-                  alt=""
-                  style="width: 100%; height: auto"
-                />
-                <img
-                  class="animated"
-                  src="images/jobly.gif"
-                  alt=""
-                  style="width: 100%; height: auto"
-                />
+                <img class="still" src="images/warbler-still.jpg" alt="" />
+                <img class="animated" src="images/warbler.gif" alt="" />
               </a>
-              <h3><a href="#">Jobly</a></h3>
-              <p>A model job and company-searching app.</p>
+              <h3><a href="#">Warbler</a></h3>
+              <p>A mock version of Twitter.</p>
             </article>
           </div>
-          <div
-            class="col-4 col-6-medium col-12-small"
-            style="width: 33.33%; box-sizing: border-box"
-          >
+          <div class="col-4 col-6-medium col-12-small image-container">
             <article class="box style2">
               <a
-                href="https://jobly-app.fly.dev/"
+                href="https://warbler-app.fly.dev/"
                 class="image featured image-switcher"
-                height="'auto'"
               >
-                <img
-                  class="still"
-                  src="images/boggle-still.jpg"
-                  alt=""
-                  style="width: 100%; height: auto"
-                />
-                <img
-                  class="animated"
-                  src="images/boggle.gif"
-                  alt=""
-                  style="width: 100%; height: auto"
-                />
+                <img class="still" src="images/jobly-still.jpg" alt="" />
+                <img class="animated" src="images/jobly.gif" alt="" />
               </a>
-              <h3><a href="#">Boggle</a></h3>
-              <p>A timed word-making minigame.</p>
+              <h3><a href="#">Jobly</a></h3>
+              <p>A model job-searching website.</p>
             </article>
           </div>
         </div>
-
         <footer>
           <p>Feel like reaching out?</p>
           <a href="#contact" class="button large scrolly"
@@ -233,7 +216,7 @@
       <div class="container medium">
         <header>
           <h2>Have me make stuff for you.</h2>
-          <p>Let me know how I can make you the best website possible.</p>
+          <p>Let me know how I can make you the best software possible.</p>
         </header>
         <div class="row">
           <div class="col-12">
@@ -285,17 +268,23 @@
             <h3>Find me on ...</h3>
             <ul class="social">
               <li>
-                <a href="https://www.linkedin.com/in/patrick-gilhooley-03360b235/" class="icon brands fa-linkedin-in"
+                <a
+                  href="https://www.linkedin.com/in/patrick-gilhooley-03360b235/"
+                  class="icon brands fa-linkedin-in"
                   ><span class="label">LinkedIn</span></a
                 >
               </li>
               <li>
-                <a href="https://github.com/pgil256" class="icon brands fa-github"
+                <a
+                  href="https://github.com/pgil256"
+                  class="icon brands fa-github"
                   ><span class="label">Github</span></a
                 >
               </li>
               <li>
-                <a href="https://www.instagram.com/patrick.gilhooley/" class="icon brands fa-instagram"
+                <a
+                  href="https://www.instagram.com/patrick.gilhooley/"
+                  class="icon brands fa-instagram"
                   ><span class="label">Instagram</span></a
                 >
               </li>
