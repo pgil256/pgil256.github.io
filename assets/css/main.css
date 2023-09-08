@@ -2620,7 +2620,7 @@ body > article {
 .tooltip .tooltiptext {
   visibility: hidden;
   opacity: 0; 
-  width: 450px;
+  width: 475px;
   height: 250px;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
