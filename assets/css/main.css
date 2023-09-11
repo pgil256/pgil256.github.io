@@ -2040,6 +2040,10 @@ ul.actions li:first-child {
   margin-bottom: 0.5em;
 }
 
+.box.style2 {
+  padding: 3em 2em 3.5em 2em;
+}
+
 .box.style2 h3 {
   margin-bottom: 0.25em;
 }
@@ -2047,9 +2051,9 @@ ul.actions li:first-child {
 .box.style2 .image {
   position: relative;
   left: 2em;
-  top: 2em;
+  top: 1em;
   margin: -4em 0 4em -4em;
-  width: auto;
+  width: 350px;
 }
 
 /* Icons */
@@ -2499,10 +2503,12 @@ body > article {
     margin-right: auto !important;
   }
 
+
   .box.style2 {
-    max-width: 32em;
+    max-width: 32em; /* Increased width */
     margin-left: auto !important;
     margin-right: auto !important;
+    height: auto; /* Adjusted for auto height */
   }
 
   /* Wrappers */
@@ -2570,7 +2576,6 @@ body > article {
   }
 }
 
-
 .image-switcher .animated {
   display: none;
 }
@@ -2586,28 +2591,17 @@ body > article {
 .image-container {
   position: relative;
   display: inline-block;
-  width: 33.33%;
-  box-sizing: border-box;
-}
-
-.box.style2 {
-  height: 250px; 
-  overflow: hidden;
 }
 
 .image-switcher img {
-  max-width: 99.5%; 
-  height: 100%;
-  display: block;
-  margin: 0 auto; 
-  max-height: 150px;
+  margin: auto; 
+  display: block;  
 }
 
 .image-switcher {
   display: flex;
-  align-items: center; 
-  justify-content: center;
-  height: 150px; 
+  align-items: center;  
+  justify-content: center; 
 }
 
 .tooltip {
@@ -2620,7 +2614,7 @@ body > article {
 .tooltip .tooltiptext {
   visibility: hidden;
   opacity: 0; 
-  width: 475px;
+  width: 450px;
   height: 250px;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
@@ -2634,7 +2628,7 @@ body > article {
   top: 80%;  
   left: 0;
   margin-left: -200px;
-  font-size: 1.35vw;
+  font-size: 1.5vw;
   overflow: hidden;
   text-overflow: ellipsis;
   
