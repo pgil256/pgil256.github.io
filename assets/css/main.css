@@ -2041,7 +2041,7 @@ ul.actions li:first-child {
 }
 
 .box.style2 {
-  padding: 3em 2em 3.5em 2em;
+  padding: 2em 2em 2em 2em;
 }
 
 .box.style2 h3 {
@@ -2052,7 +2052,7 @@ ul.actions li:first-child {
   position: relative;
   left: 2em;
   top: 1em;
-  margin: -4em 0 4em -4em;
+  margin: -4em 0 3em -4em;
   width: 350px;
 }
 
@@ -2575,17 +2575,23 @@ body > article {
     margin-top: 0;
   }
 }
-
 .image-switcher .animated {
-  display: none;
+  opacity: 0; /* Set the initial opacity to 0 (invisible) */
+  transition: opacity 0.3s ease-in-out; /* Add a transition effect */
+  position: absolute; /* Absolute positioning to overlay the images */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .image-switcher:hover .still {
-  display: none;
+  opacity: 0; /* Set opacity to 0 on hover */
+  transition: opacity 0.3s ease-in-out; /* Add a transition effect */
 }
 
 .image-switcher:hover .animated {
-  display: block;
+  opacity: 1; /* Set opacity to 1 on hover */
 }
 
 .image-container {
@@ -2636,6 +2642,7 @@ body > article {
   transform: translateY(10%);  
   transition: opacity 0.3s ease, transform 0.3s ease;  
 }
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1; 
@@ -2684,8 +2691,45 @@ body > article {
   transform: translate(-45%, -50%) scale(1.05); 
 }
 
+.portfolio-anchor {
+  margin-right: 10px;
+  padding: 5px 10px; 
+  color: black;
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
 
+.portfolio-anchor:last-child {
+  margin-right: 0; 
+}
 
+.portfolio-anchor:hover {
+  color: black;
+}
 
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: black;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .1em solid rgb(0, 0, 0); 
+  white-space: nowrap;  
+  letter-spacing: .10em; 
+  line-height: .7; 
+  padding: 0.2em 0; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 0, 0) }
+}
