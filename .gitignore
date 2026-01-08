@@ -1,0 +1,17 @@
+# Sass cache
+.sass-cache/
+*.css.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
+
+# Old portfolio backup
+portfolio_old/
