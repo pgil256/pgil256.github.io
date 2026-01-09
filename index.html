@@ -61,11 +61,12 @@
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date">Apr 2024 - Present</span>
-            <h3 class="timeline-title">Software Engineer</h3>
+            <h3 class="timeline-title">Software Engineer (Contract)</h3>
             <p class="timeline-company">Ortho Integrative Medicine</p>
             <ul class="timeline-details">
-              <li>Engineered C++ and Python control stack on Raspberry Pi for medical device</li>
-              <li>Built PyQt5 operator interface for knee traction actuator with real-time feedback and e-stop safety controls</li>
+              <li>Engineered a C++ and Python control stack on Raspberry Pi and Arduino for a medical therapy device, streamlining the path to manufacturing and FDA trialing</li>
+              <li>Developed a real-time data visualization and control GUI with PyQt5, improving clinician UX and implementing critical e-stop safety features</li>
+              <li>Built automated test suites using bash and pytest, achieving sub-2% error rates in end-to-end validation</li>
             </ul>
           </div>
         </div>
@@ -78,8 +79,9 @@
             <h3 class="timeline-title">System Administrator</h3>
             <p class="timeline-company">Academie Da Vinci Charter</p>
             <ul class="timeline-details">
-              <li>Administered 1,000+ multi-OS devices with 99.5% uptime</li>
-              <li>Eliminated $4,200/mo in MSP costs via Python/PowerShell automation</li>
+              <li>Managed Active Directory, Microsoft 365, and Google Workspace for 350+ users on 1000+ Windows, Chrome OS, and iOS devices</li>
+              <li>Eliminated $4,200/mo in MSP costs by developing in-house automation scripts (PowerShell, Python) for system backups, RMM, EDR, and helpdesk ticketing</li>
+              <li>Designed and deployed a dashboard integrated with the Microsoft Graph API, cutting IT support ticket resolution times by 30%</li>
             </ul>
           </div>
         </div>
@@ -92,21 +94,20 @@
             <h3 class="timeline-title">QA Engineer</h3>
             <p class="timeline-company">Coast Autonomous</p>
             <ul class="timeline-details">
-              <li>Performance testing of autonomous vehicle systems, achieving 20% improvement</li>
-              <li>Expanded CI/CD test cases for early defect identification</li>
+              <li>Executed comprehensive E2E testing of autonomous vehicle systems, developing systematic protocols for edge case identification that drove 20% performance improvement</li>
             </ul>
           </div>
         </div>
 
-        <!-- Math Instructor -->
+        <!-- Math Teacher -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date">Sep 2019 - Sep 2023</span>
-            <h3 class="timeline-title">Secondary Math Instructor</h3>
+            <h3 class="timeline-title">Middle School Math Teacher</h3>
             <p class="timeline-company">Pinellas County Schools</p>
             <ul class="timeline-details">
-              <li>Maintained 40% average student growth rate over four years</li>
+              <li>Drove 40% average student growth over four years by analyzing assessment data to identify gaps and iterating on instructional approaches</li>
             </ul>
           </div>
         </div>
@@ -119,6 +120,21 @@
     <div class="container">
       <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-title">KneeSpa Control System</h3>
+          <p class="project-description">Embedded control system for a medical knee traction device. Raspberry Pi runs a PyQt5 operator interface communicating with an Arduino over serial to drive three motion axes (axial, lateral, horizontal flexion). Features real-time pressure feedback, configurable treatment profiles, and hardware e-stop safety integration.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">PyQt5</span>
+            <span class="project-tag">C++</span>
+            <span class="project-tag">Raspberry Pi</span>
+            <span class="project-tag">Arduino</span>
+          </div>
+          <div class="project-links">
+            <a href="https://kneespa.com/providers/" target="_blank" rel="noopener noreferrer">Live</a>
+          </div>
+        </div>
+
         <div class="project-card">
           <h3 class="project-title">Juntas Seguras</h3>
           <p class="project-description">A platform for managing community savings pools (ROSCAs/tandas). Groups contribute on a schedule, and each round one member receives the full pool. Handles pool creation, contribution tracking, payout scheduling, and member communication with @mentions.</p>
