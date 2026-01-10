@@ -15,3 +15,8 @@ Thumbs.db
 
 # Old portfolio backup
 portfolio_old/
+
+# Resume and portfolio info
+*.pdf
+*.md
+!README.md
