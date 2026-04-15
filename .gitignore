@@ -20,3 +20,4 @@ portfolio_old/
 *.pdf
 *.md
 !README.md
+.vercel
