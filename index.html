@@ -149,33 +149,35 @@
       <div class="projects-grid">
         <div class="project-card">
           <h3 class="project-title">KneeSpa Control System</h3>
-          <p class="project-description">Embedded control system for a medical knee traction device. Raspberry Pi runs a
-            PyQt5 operator interface communicating with an Arduino over serial to drive three motion axes (axial,
-            lateral, horizontal flexion). Features real-time pressure feedback, configurable treatment profiles, and
-            hardware e-stop safety integration.</p>
+          <p class="project-description">Embedded control system for a medical knee decompression device. Raspberry Pi
+            operator software coordinates a PyQt5 GUI, Arduino serial control, GPIO e-stop, and three motion axes with
+            real-time pressure feedback. A browser-based DRX simulator mirrors the firmware protocol for demos and
+            treatment protocol testing.</p>
           <div class="project-tags">
             <span class="project-tag">Python</span>
             <span class="project-tag">PyQt5</span>
             <span class="project-tag">C++</span>
             <span class="project-tag">Raspberry Pi</span>
             <span class="project-tag">Arduino</span>
+            <span class="project-tag">Three.js</span>
           </div>
           <div class="project-links">
             <a href="https://kneespa.com/providers/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://drx-simulator.patbuilds.dev" target="_blank" rel="noopener noreferrer">Demo</a>
           </div>
         </div>
 
         <div class="project-card">
           <h3 class="project-title">Juntas Seguras</h3>
-          <p class="project-description">A platform for managing community savings pools (ROSCAs/tandas). Groups
-            contribute on a schedule, and each round one member receives the full pool. Handles pool creation,
-            contribution tracking, payout scheduling, and member communication with @mentions.</p>
+          <p class="project-description">Secure platform for managing community savings pools (ROSCAs/tandas). Handles
+            pool setup, contribution tracking, payout scheduling, member discussion threads with @mentions, mandatory
+            MFA, Stripe Identity verification, audit logging, and payment reminders.</p>
           <div class="project-tags">
-            <span class="project-tag">Next.js 14</span>
+            <span class="project-tag">Next.js 14.2</span>
             <span class="project-tag">TypeScript</span>
             <span class="project-tag">MongoDB</span>
             <span class="project-tag">NextAuth.js</span>
-            <span class="project-tag">Tailwind CSS</span>
+            <span class="project-tag">Stripe</span>
           </div>
           <div class="project-links">
             <a href="https://juntasseguras.patbuilds.dev" target="_blank" rel="noopener noreferrer">Live</a>
@@ -185,15 +187,15 @@
 
         <div class="project-card">
           <h3 class="project-title">Map My Seat</h3>
-          <p class="project-description">A seating chart generator for K-12 teachers. Educators define their classroom
-            layout and seating constraints, and the app generates an optimized arrangement. Supports PDF export and CSV
-            roster import.</p>
+          <p class="project-description">Automated seating chart generator for K-12 teachers. Teachers import rosters,
+            design classroom layouts, set keep-apart/seat-together rules and accommodations, then a simulated-annealing
+            solver generates scored charts with drag-to-swap, rationale tooltips, PDF export, CSV import, and demo mode.</p>
           <div class="project-tags">
             <span class="project-tag">React 18</span>
+            <span class="project-tag">Vite</span>
             <span class="project-tag">Express</span>
             <span class="project-tag">PostgreSQL</span>
             <span class="project-tag">Chakra UI</span>
-            <span class="project-tag">JWT</span>
           </div>
           <div class="project-links">
             <a href="https://mapmyseat.patbuilds.dev" target="_blank" rel="noopener noreferrer">Live</a>
@@ -203,19 +205,38 @@
 
         <div class="project-card">
           <h3 class="project-title">Home Finder</h3>
-          <p class="project-description">A property search tool aggregating real estate data for Pinellas County, FL.
-            Scrapes and consolidates info from the Property Appraiser and Tax Collector. Search by city, ZIP, or price
-            range, then export results as Excel, PDF, or CSV.</p>
+          <p class="project-description">Searchable index of 437,000+ Pinellas County property records. A monthly GitHub
+            Actions import loads official Property Appraiser data into Neon Postgres, and the Django/Vercel app serves
+            indexed search, detail pages, market stats, Google Street View cards, and Excel/PDF exports.</p>
           <div class="project-tags">
             <span class="project-tag">Django 5</span>
             <span class="project-tag">Python</span>
-            <span class="project-tag">Selenium</span>
-            <span class="project-tag">Celery</span>
-            <span class="project-tag">Pandas</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">Vercel</span>
+            <span class="project-tag">Tailwind CSS</span>
           </div>
           <div class="project-links">
             <a href="https://homefinder.patbuilds.dev" target="_blank" rel="noopener noreferrer">Live</a>
             <a href="https://github.com/pgil256/home_finder" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">TabVision</h3>
+          <p class="project-description">Automatic guitar tab transcription from video. An Electron/React client uploads
+            recordings to a Flask pipeline that combines Basic Pitch audio detection with MediaPipe hand tracking,
+            producing a synced tab editor with confidence scoring and text/PDF export.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Flask</span>
+            <span class="project-tag">Electron</span>
+            <span class="project-tag">React</span>
+            <span class="project-tag">MediaPipe</span>
+            <span class="project-tag">Basic Pitch</span>
+          </div>
+          <div class="project-links">
+            <a href="https://tabvision.patbuilds.dev" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="https://github.com/pgil256/tab_vision" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
       </div>
@@ -255,9 +276,9 @@
             <span class="skill-tag">PostgreSQL</span>
             <span class="skill-tag">MongoDB</span>
             <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Vercel</span>
             <span class="skill-tag">Git</span>
-            <span class="skill-tag">Azure</span>
-            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">GitHub Actions</span>
           </div>
         </div>
       </div>
@@ -316,7 +337,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Patrick Gilhooley. All rights reserved.</p>
+    <p>&copy; 2026 Patrick Gilhooley. All rights reserved.</p>
   </footer>
 
   <script src="js/main.js"></script>
