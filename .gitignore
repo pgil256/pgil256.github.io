@@ -21,3 +21,8 @@ portfolio_old/
 *.md
 !README.md
 .vercel
+
+# Local agent config
+CLAUDE.md
+AGENTS.md
+.mcp.json
