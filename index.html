@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patrick Gilhooley | Software Engineer</title>
+  <title>Patrick Gilhooley | Software Developer</title>
   <meta name="description"
-    content="Software Engineer with experience in full-stack development, embedded systems, and infrastructure automation.">
+    content="Patrick Gilhooley, a Tampa Bay software developer building embedded controls in Python and C++, web applications in Django and TypeScript, and automated tests.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
   <section id="hero">
     <div class="hero-content">
       <h1 class="hero-name">Patrick Gilhooley</h1>
-      <p class="hero-tagline">Software Engineer | Full-Stack & Systems</p>
+      <p class="hero-tagline">Software Developer</p>
       <div class="hero-links">
         <a href="https://github.com/pgil256" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -64,9 +64,7 @@
   <!-- About -->
   <section id="about">
     <div class="container">
-      <p class="about-text">Former math teacher who discovered a passion for building software while automating
-        classroom tasks. Now I build full-stack applications, embedded control systems, and infrastructure automation. I
-        bring the same focus on clear communication and problem-solving to every engineering challenge.</p>
+      <p class="about-text">I wrote the firmware and touchscreen software for a three-axis knee-therapy prototype. I also built a Django app that helps Pinellas County homebuyers look up a property and estimate what they’ll pay in taxes. You can <a href="https://drx-simulator.patbuilds.dev/">try the KneeSpa simulator</a> or <a href="https://pinellasmarketlens.patbuilds.dev/">look up a Pinellas property</a>.</p>
     </div>
   </section>
 
@@ -81,14 +79,10 @@
           <div class="timeline-content">
             <span class="timeline-date">Apr 2024 - Present</span>
             <h3 class="timeline-title">Software Engineer (Contract)</h3>
-            <p class="timeline-company">Ortho Integrative Medicine</p>
+            <p class="timeline-company">Ortho Integrative Medicine Institute</p>
             <ul class="timeline-details">
-              <li>Engineered a C++ and Python control stack on Raspberry Pi and Arduino for a medical therapy device,
-                streamlining the path to manufacturing and FDA trialing</li>
-              <li>Developed a real-time data visualization and control GUI with PyQt5, improving clinician UX and
-                implementing critical e-stop safety features</li>
-              <li>Built automated test suites using bash and pytest, achieving sub-2% error rates in end-to-end
-                validation</li>
+              <li>Developed C++ firmware and Python control software for the KneeSpa DRx prototype. A Raspberry Pi communicates with an Arduino to control three motion axes using pressure feedback.</li>
+              <li>Built the PyQt5 touchscreen for live pressure readings and treatment settings, and wrote Bash and pytest integration tests for the control loop.</li>
             </ul>
           </div>
         </div>
@@ -99,14 +93,11 @@
           <div class="timeline-content">
             <span class="timeline-date">May 2024 - Present</span>
             <h3 class="timeline-title">System Administrator</h3>
-            <p class="timeline-company">Academie Da Vinci Charter</p>
+            <p class="timeline-company">Académie Da Vinci Charter School</p>
             <ul class="timeline-details">
-              <li>Managed Active Directory, Microsoft 365, and Google Workspace for 350+ users on 1000+ Windows, Chrome
-                OS, and iOS devices</li>
-              <li>Eliminated $4,200/mo in MSP costs by developing in-house automation scripts (PowerShell, Python) for
-                system backups, RMM, EDR, and helpdesk ticketing</li>
-              <li>Designed and deployed a dashboard integrated with the Microsoft Graph API, cutting IT support ticket
-                resolution times by 30%</li>
+              <li>Built an internal Python and PowerShell dashboard using Microsoft Graph that helped cut helpdesk ticket resolution time by about 30%.</li>
+              <li>Wrote deployment and remediation scripts for a school supporting roughly 1,000 devices and 350+ users.</li>
+              <li>Brought backups, endpoint protection and helpdesk functions in-house, eliminating $4,200 a month in outsourced IT costs.</li>
             </ul>
           </div>
         </div>
@@ -117,10 +108,9 @@
           <div class="timeline-content">
             <span class="timeline-date">Oct 2023 - Apr 2024</span>
             <h3 class="timeline-title">QA Engineer</h3>
-            <p class="timeline-company">Coast Autonomous</p>
+            <p class="timeline-company">COAST Autonomous</p>
             <ul class="timeline-details">
-              <li>Executed comprehensive E2E testing of autonomous vehicle systems, developing systematic protocols for
-                edge case identification that drove 20% performance improvement</li>
+              <li>Investigated how autonomous-vehicle software handled unexpected obstacles and sensor failures during field tests. Gave developers GPS data, video and steps to reproduce defects.</li>
             </ul>
           </div>
         </div>
@@ -148,40 +138,67 @@
       <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3 class="project-title">KneeSpa Control System</h3>
-          <p class="project-description">Embedded control system for a medical knee decompression device. Raspberry Pi
-            operator software coordinates a PyQt5 GUI, Arduino serial control, GPIO e-stop, and three motion axes with
-            real-time pressure feedback. A browser-based DRX simulator mirrors the firmware protocol for demos and
-            treatment protocol testing.</p>
+          <h3 class="project-title">KneeSpa DRx</h3>
+          <p class="project-description">I built the Python touchscreen software and C++ firmware for a knee-therapy prototype. The operator can adjust treatment settings and see pressure readings as the controller coordinates three motion axes.</p>
           <div class="project-tags">
             <span class="project-tag">Python</span>
-            <span class="project-tag">PyQt5</span>
             <span class="project-tag">C++</span>
+            <span class="project-tag">PyQt5</span>
             <span class="project-tag">Raspberry Pi</span>
             <span class="project-tag">Arduino</span>
-            <span class="project-tag">Three.js</span>
+            <span class="project-tag">pytest</span>
           </div>
           <div class="project-links">
+            <a href="https://drx-simulator.patbuilds.dev/" target="_blank" rel="noopener noreferrer">Simulator</a>
+            <a href="https://github.com/pgil256/drx-2.0" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://kneespa.com/providers/" target="_blank" rel="noopener noreferrer">Website</a>
-            <a href="https://drx-simulator.patbuilds.dev" target="_blank" rel="noopener noreferrer">Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">Pinellas Market Lens</h3>
+          <p class="project-description">Homebuyers can look up a Pinellas County parcel, estimate their property taxes and compare nearby sales. A monthly import loads more than 437,000 county records into PostgreSQL so the Django app can serve indexed searches.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Django</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">GitHub Actions</span>
+          </div>
+          <div class="project-links">
+            <a href="https://pinellasmarketlens.patbuilds.dev/" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="https://github.com/pgil256/home_finder" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
 
         <div class="project-card">
           <h3 class="project-title">Juntas Seguras</h3>
-          <p class="project-description">Secure platform for managing community savings pools (ROSCAs/tandas). Handles
-            pool setup, contribution tracking, payout scheduling, member discussion threads with @mentions, mandatory
-            MFA, Stripe Identity verification, audit logging, and payment reminders.</p>
+          <p class="project-description">I built a TypeScript and Next.js app for groups that pool their savings. Members track contributions and organizers record each payout. Jest and Playwright tests cover sign-in and pool workflows.</p>
           <div class="project-tags">
-            <span class="project-tag">Next.js 14.2</span>
             <span class="project-tag">TypeScript</span>
+            <span class="project-tag">Next.js</span>
             <span class="project-tag">MongoDB</span>
-            <span class="project-tag">NextAuth.js</span>
-            <span class="project-tag">Stripe</span>
+            <span class="project-tag">Jest</span>
+            <span class="project-tag">Playwright</span>
           </div>
           <div class="project-links">
-            <a href="https://juntasseguras.patbuilds.dev" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="https://juntasseguras.patbuilds.dev/" target="_blank" rel="noopener noreferrer">Live</a>
             <a href="https://github.com/pgil256/juntas-seguras" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">TabVision</h3>
+          <p class="project-description">TabVision turns an acoustic guitar recording into string-and-fret tablature. I used patterns in string overtones to distinguish the same pitch played on different strings, then measured the improvement on recordings from a held-out guitarist.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Audio signal processing</span>
+            <span class="project-tag">.NET</span>
+            <span class="project-tag">WPF</span>
+          </div>
+          <div class="project-links">
+            <a href="https://tabvision.patbuilds.dev/" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="https://github.com/pgil256/tab_vision" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/pgil256/tab_vision/blob/main/docs/NARRATIVE.md" target="_blank" rel="noopener noreferrer">Engineering write-up</a>
           </div>
         </div>
 
@@ -200,43 +217,6 @@
           <div class="project-links">
             <a href="https://mapmyseat.patbuilds.dev" target="_blank" rel="noopener noreferrer">Live</a>
             <a href="https://github.com/pgil256/map-my-seat-flyio" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3 class="project-title">Home Finder</h3>
-          <p class="project-description">Searchable index of 437,000+ Pinellas County property records. A monthly GitHub
-            Actions import loads official Property Appraiser data into Neon Postgres, and the Django/Vercel app serves
-            indexed search, detail pages, market stats, Google Street View cards, and Excel/PDF exports.</p>
-          <div class="project-tags">
-            <span class="project-tag">Django 5</span>
-            <span class="project-tag">Python</span>
-            <span class="project-tag">PostgreSQL</span>
-            <span class="project-tag">Vercel</span>
-            <span class="project-tag">Tailwind CSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://homefinder.patbuilds.dev" target="_blank" rel="noopener noreferrer">Live</a>
-            <a href="https://github.com/pgil256/home_finder" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3 class="project-title">TabVision</h3>
-          <p class="project-description">Automatic guitar tab transcription from video. An Electron/React client uploads
-            recordings to a Flask pipeline that combines Basic Pitch audio detection with MediaPipe hand tracking,
-            producing a synced tab editor with confidence scoring and text/PDF export.</p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">Flask</span>
-            <span class="project-tag">Electron</span>
-            <span class="project-tag">React</span>
-            <span class="project-tag">MediaPipe</span>
-            <span class="project-tag">Basic Pitch</span>
-          </div>
-          <div class="project-links">
-            <a href="https://tabvision.patbuilds.dev" target="_blank" rel="noopener noreferrer">Live</a>
-            <a href="https://github.com/pgil256/tab_vision" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
       </div>
@@ -260,7 +240,7 @@
           </div>
         </div>
         <div class="skills-category">
-          <h3>Frameworks & Libraries</h3>
+          <h3>Frameworks, Libraries &amp; Testing</h3>
           <div class="skills-tags">
             <span class="skill-tag">React</span>
             <span class="skill-tag">Next.js</span>
@@ -268,6 +248,9 @@
             <span class="skill-tag">Flask</span>
             <span class="skill-tag">Express</span>
             <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">pytest</span>
+            <span class="skill-tag">Jest</span>
+            <span class="skill-tag">Playwright</span>
           </div>
         </div>
         <div class="skills-category">
