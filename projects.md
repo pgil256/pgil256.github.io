@@ -20,13 +20,13 @@ Embedded control system for a medical knee decompression device. Raspberry Pi op
 ## Juntas Seguras
 
 ### Summary
-Secure platform for managing community savings pools, also known as ROSCAs or tandas. Groups create pools, invite members, track contributions, schedule payouts, and communicate through discussion threads with @mentions. Security features include mandatory MFA, Stripe Identity verification, audit logging, payment reminders, and support workflows.
+Secure platform for managing community savings pools, also known as ROSCAs or tandas. Groups create pools, invite members, track contributions, schedule payouts, and communicate through discussion threads with @mentions. Security features include mandatory MFA, audit logging, payment reminders, and support workflows.
 
 ### Tech Stack
 - **Frontend:** Next.js 14.2, React 18, TypeScript, Tailwind CSS, shadcn/ui
 - **Backend:** Next.js App Router API routes, NextAuth.js JWT authentication
 - **Database:** MongoDB with Mongoose ODM
-- **Security and payments:** MFA, Stripe Identity, payment method tracking, audit logging
+- **Security and payments:** MFA, payment method tracking, audit logging
 
 ### Links
 - **Live:** [https://juntasseguras.patbuilds.dev](https://juntasseguras.patbuilds.dev)
